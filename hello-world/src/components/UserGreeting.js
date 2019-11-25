@@ -9,14 +9,14 @@ class UserGreeting extends Component {
         }
     }
     render() {
-
-        return(
-            this.state.isLoggedIn ? (
-            <div>Welcome Yvon</div>
-            ) : (
-            <div>Welcome Guest</div>
-            )            
-        )
+        return this.state.isLoggedIn && <div>Welcome Yvon</div>
+        // return(
+        //     this.state.isLoggedIn ? (
+        //     <div>Welcome Yvon</div>
+        //     ) : (
+        //     <div>Welcome Guest</div>
+        //     )            
+        // )
 
         // let message
         // if (this.state.isLoggedIn) {
