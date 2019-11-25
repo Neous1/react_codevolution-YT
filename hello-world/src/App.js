@@ -5,6 +5,7 @@ import './App.css';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
 // import Welcome from './components/Welcome';
 // import Message from './components/Message';
 // import Counter from './components/Counter';
@@ -17,7 +18,8 @@ class App extends Component {
   render(){
     return(
       <div className= 'App'>
-        <NameList/>
+        <Stylesheet primary={true}/>
+        {/* <NameList/> */}
         {/* <UserGreeting/> */}
         {/* <ParentComponent/> */}
         {/* <EventBind/> */}
